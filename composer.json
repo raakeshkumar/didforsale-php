@@ -1,0 +1,25 @@
+{
+    "name": "DIDForSale/sdk",
+    "description": "A PHP wrapper for Didforsale's API",
+    "type": "library",
+    "license": "MIT",
+    "keywords":["didforsale", "sms","api"],
+    "authors": [
+        {
+            "name": "Raakesh Kumar",
+            "email": "kumarrakesh04.07@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "apigen/apigen": "4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Didforsale\\": "Didforsale/"
+        }
+    }
+}
