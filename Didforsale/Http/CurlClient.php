@@ -39,7 +39,7 @@ class CurlClient implements Client {
                 throw new EnvironmentException(curl_error($curl));
             }
             
-            curl_close($ch);
+            curl_close($curl);
             
             return new Response($response);
             
