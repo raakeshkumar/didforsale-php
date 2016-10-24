@@ -7,6 +7,6 @@ vendor/*
 .idea
 
 nbproject
-
+index.php
 # This is used by the documentation generator
 venv

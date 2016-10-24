@@ -13,6 +13,6 @@ namespace Didforsale\Exceptions;
  *
  * @author raakesh
  */
-class DidforsaleException {
+class DidforsaleException extends \Exception {
     //put your code here
 }

@@ -13,6 +13,8 @@
  */
 namespace Didforsale;
 
+use Didforsale\Exceptions\EnvironmentException;
+
 class Client {
     //put your code here
     protected $url;
@@ -25,6 +27,11 @@ class Client {
     }
             
     function send_sms($from, $to, $message) {
+        
+        if(!is_array($to)) {
+            throw new EnvironmentException("To param should in array format.");
+        }
+        
         $this->url .= "SMS/Send/{$this->apikey}";
         $method = 'post';
         $data = array('from' => $from, 'to' => $to, 'text' => $message);
