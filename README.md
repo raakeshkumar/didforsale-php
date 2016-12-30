@@ -23,3 +23,23 @@ EXAMPLE
 
     print_r($client->send_sms('XXXXXXXX331', 'XXXXXXXX406', 'Your message to be sent'));
 ```
+```php 
+
+    include './vendor/autoload.php';
+
+    $apikey = 'YOUR API KEY';
+
+    $client = new Didforsale\Client($apikey);
+
+    print_r($client->call('XXXXXXXX331', 'XXXXXXXX406','Your Application Url'));
+```
+```php 
+
+    include './vendor/autoload.php';
+
+    $apikey = 'YOUR API KEY';
+
+    $client = new Didforsale\Client($apikey);
+
+    print_r($client->authenticate('XXXXXXXX331', 'XXXXXXXX406','Your Application Url'));
+```
