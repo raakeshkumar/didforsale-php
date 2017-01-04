@@ -52,8 +52,9 @@ Your Application Url should have content in xml
 
 EXAMPLE. Application Url for authenticate User
 ------
+```xml
 <?xml version="1.0" encoding="UTF-8"?> 
 <Response>
          <say>Your PIN is 8 9 7 0 </Say>
  </Response>
-
+```
