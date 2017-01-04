@@ -50,10 +50,10 @@ EXAMPLE. Authenticate a user
     print_r($client->authenticate('XXXXXXXX331', 'XXXXXXXX406','Your Application url'));
 ```
 
-from: This will be the Caller ID of the call('XXXXXXXX331').
-to: Number that should be Dialed('XXXXXXXX406')
-Application url: This is web url, where your application reside, this URL will be called as soon as call is connected. If no URL, then call will be automatically connected to FROM number.
-
+* from: This will be the Caller ID of the call('XXXXXXXX331').
+* to: Number that should be Dialed('XXXXXXXX406')
+* Application url: This is web url, where your application reside, this URL will be called as soon as call is connected. If no URL, then call will be automatically connected to FROM number.
+------
 Your Application url should have content in xml
 
 EXAMPLE. Application url for authenticate User
