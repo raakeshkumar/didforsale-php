@@ -11,7 +11,7 @@ INSTALLATION
 
 You should have all the codes with you ready to work.
 
-EXAMPLE Send SMS
+EXAMPLE. Send SMS
 -------
 ```php
     include './vendor/autoload.php';
@@ -23,7 +23,7 @@ EXAMPLE Send SMS
 
     print_r($client->send_sms('XXXXXXXX331', 'XXXXXXXX406', 'Your message to be sent'));
 ```
-EXAMPLE Make an Outbound Call
+EXAMPLE. Make an Outbound Call
 -------
 ```php 
 
@@ -35,7 +35,7 @@ EXAMPLE Make an Outbound Call
 
     print_r($client->call('XXXXXXXX331', 'XXXXXXXX406','Your Application Url'));
 ```
-EXAMPLE Authenticate a user
+EXAMPLE. Authenticate a user
 -------
 ```php 
 
@@ -50,10 +50,10 @@ EXAMPLE Authenticate a user
 
 Your Application Url should have content in xml
 
-EXAMPLE Application Url for authenticate User
+EXAMPLE. Application Url for authenticate User
 ------
-```<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?> 
 <Response>
          <say>Your PIN is 8 9 7 0 </Say>
  </Response>
-```
+
