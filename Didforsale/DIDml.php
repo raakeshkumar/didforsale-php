@@ -76,7 +76,7 @@ class DIDml{
      * :rtype: SimpleXmlElement
      */
     public function __call($verb, array $args) {
-//        print_r($verb);
+        print_r($verb);
         
         list($noun, $attrs) = $args + array('', array());
         if (is_array($noun)) {
