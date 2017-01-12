@@ -76,8 +76,6 @@ class DIDml{
      * :rtype: SimpleXmlElement
      */
     public function __call($verb, array $args) {
-//        print_r($verb);
-        
         list($noun, $attrs) = $args + array('', array());
         if (is_array($noun)) {
             list($attrs, $noun) = array($noun, '');
@@ -138,7 +136,10 @@ class DIDml{
      */
     public function __toString() {
         $xml = $this->element->asXML();
-        return (string)str_replace('<?xml version="1.0"?>','<?xml version="1.0" encoding="UTF-8"?>', $xml);
+        return (string)str_replace(
+                '<?xml version="1.0"?>',
+                '<?xml version="1.0" encoding="UTF-8"?>', $xml
+                );
     }
     
 }
